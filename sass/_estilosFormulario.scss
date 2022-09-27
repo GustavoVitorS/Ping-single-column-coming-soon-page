@@ -1,0 +1,89 @@
+@import "variables";
+
+#formulario {
+
+    display: flex;
+
+    gap: 2rem;
+
+    margin-bottom: $MarginInferiorFormulario;
+
+    & > div {
+        text-align: left;
+
+        flex: 1;
+        max-width: $MaxWidthInput;
+
+        @media (max-width: 645px) {
+            max-width: none;
+            text-align: center;
+        }
+    }
+ 
+    @media (max-width: 645px) {
+        flex-direction: column;
+    }
+}
+
+#inputEmail {
+
+    width: 100%;
+    height: $HeightInputBoton;
+    padding: $PaddingInput;
+    margin-bottom: 1.2rem;
+    border-radius: $HeightInputBoton / 2;
+    border: $BordeInputRedes;
+    outline: none;
+    color: $ColorFuenteTextoInput;
+
+    font: {
+        size: $SizeFuenteInputPlaceholderBoton;
+    }
+
+    caret-color: $ColorFuenteInputPlaceholderSmall;
+
+    &::placeholder {
+
+        opacity: 1;
+        color: $ColorFuenteInputPlaceholderSmall;
+    }
+
+    @media (max-width: 645px) {
+
+
+        font-size: $SizeFuenteTextoInputPlaceholderBotonResponsive490;
+
+        &::placeholder {
+            font-size: $SizeFuenteTextoInputPlaceholderBotonResponsive490;
+        }
+    }
+
+}
+
+#enviar {
+    flex: 1;
+    background: $BackgroundBoton;
+    color: #fff;
+    max-width: $MaxWidthBoton;
+    height: $HeightInputBoton;
+    border: none;
+    border-radius: $HeightInputBoton / 2;
+
+    font: {
+        weight: $weight700;
+    }
+ 
+    &:hover {
+        background: $BackgroundBotonHover;
+    }
+
+    cursor: pointer;
+
+    @media (max-width: 645px) {
+        width: 100%;
+        max-width: none;
+        min-height: $HeightInputBoton;
+        font-weight: 600;
+        font-size: $SizeFuenteTextoInputPlaceholderBotonResponsive490;
+    }
+}

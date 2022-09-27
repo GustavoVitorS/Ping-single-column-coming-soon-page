@@ -1,0 +1,37 @@
+@import "variables";
+
+* {
+    box-sizing: border-box;
+    font-family: "Libre Franklin";
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    .contenedor-principal { 
+
+        width: 95%;
+
+        max-width: $MaxWidthContenedorPrincipal; 
+
+        margin: {
+            top: $MarginSuperiorContenedorPrincipal; 
+            bottom: $MarginInferiorContenedorPrincipal; 
+        }
+
+        text-align: center; 
+    }
+}
+
+@import "header";
+@import "contenedorTexto";
+@import "estilosFormulario";
+@import "estilosImg";
+@import "estilosFooter";

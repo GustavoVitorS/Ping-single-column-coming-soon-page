@@ -1,0 +1,42 @@
+@import "variables";
+
+.contenedor-texto {
+    margin-bottom: $MarginInferiorContendorTexto;
+}
+
+.title {
+
+    color: $ColorFuenteTitulo;
+
+    margin-bottom: $MarginInferiorTitulo;
+
+    font: {
+        size: $SizeFuenteTitulo; 
+        weight: $Weight300; 
+    }
+
+    span {
+
+        color: $ColorFuenteTituloSpan; 
+
+        font-weight: $weight700; 
+    }
+
+    @media (max-width: 490px) {
+        font-size: $SizeFunetetituloResponsive490px;
+    }
+}
+
+.texto {
+
+    color: $ColorFuenteTextoInput;
+
+    font: {
+        size: $SizeFuenteTexto;
+        weight: $Weight300;
+    }
+
+    @media (max-width: 490px) {
+        font-size: $SizeFuenteTextoInputPlaceholderBotonResponsive490;
+    }
+}

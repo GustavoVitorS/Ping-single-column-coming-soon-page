@@ -1,0 +1,46 @@
+@import "variables";
+
+.pie-pagina {
+
+    margin-top: $MarginSuperiorFooter;
+
+    small {
+        color: $ColorFuenteInputPlaceholderSmall;
+
+        font-size: $SizeFuenteTextoSmall;
+    }
+}
+
+.contenedor-redes-sociales {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: $MarginBottomContenedorBotonesRedes;
+    gap: 1.5rem;
+
+    a {
+        display: block;
+
+        padding-top: $PaddingTopBotonesRedes;
+        width: $WidthHeight;
+        height: $WidthHeight;
+
+        color: #4D7CF1;
+
+        border: $BordeInputRedes;
+        border-radius: $WidthHeight/2;
+
+        cursor: pointer;
+
+        &:hover{
+
+            background: $BackgroundBotonRedesHover;
+
+            border: none;
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+}
